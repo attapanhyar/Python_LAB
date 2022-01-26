@@ -1,0 +1,2 @@
+greet = 'Aqib'
+print(greet)
