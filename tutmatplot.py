@@ -3,7 +3,7 @@ import numpy as np
 ### Simple Plot
 # Data for plotting
 # t = np.arange(0.0, 2.0, 0.01)
-# s = 1 + np.sin(2 * np.pi * t)
+# s = 1 + np.cos(2 * np.pi * t)
 
 # fig, ax = plt.subplots()
 # ax.plot(t, s)
@@ -30,16 +30,15 @@ import numpy as np
 ###############################################
 ### Pie Chart
 # Pie chart, where the slices will be ordered and plotted counter-clockwise:
-# labels = 'Frogs', 'Hogs', 'Dogs', 'Logs'
-# sizes = [15, 30, 45, 10]
-# explode = (0, 0.1, 0, 0)  # only "explode" the 2nd slice (i.e. 'Hogs')
+labels = 'Aqib', 'Ali', 'Shahbaz', 'Saad'
+sizes = [1500, 3000, 4500, 1000]
+explode = (0, 0, 0, 0.1)  # only "explode" the 2nd slice (i.e. 'Hogs')
 
-# fig1, ax1 = plt.subplots()
-# ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
-#         shadow=True, startangle=90)
-# ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
-
-# plt.show()
+fig1, ax1 = plt.subplots()
+ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
+       shadow=True, startangle=90)
+ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+plt.show()
 
 
 
@@ -152,12 +151,12 @@ from matplotlib.tri import (
 # ----------------------------------------------------------------------------
 # Electrical potential of a dipole
 # ----------------------------------------------------------------------------
-def dipole_potential(x, y):
-    """The electric dipole potential V, at position *x*, *y*."""
-    r_sq = x**2 + y**2
-    theta = np.arctan2(y, x)
-    z = np.cos(theta)/r_sq
-    return (np.max(z) - z) / (np.max(z) - np.min(z))
+# def dipole_potential(x, y):
+#     """The electric dipole potential V, at position *x*, *y*."""
+#     r_sq = x**2 + y**2
+#     theta = np.arctan2(y, x)
+#     z = np.cos(theta)/r_sq
+#     return (np.max(z) - z) / (np.max(z) - np.min(z))
 
 
 # ----------------------------------------------------------------------------
@@ -221,3 +220,4 @@ def dipole_potential(x, y):
 
 # ax.set_title('Gradient plot: an electrical dipole')
 # plt.show()
+
