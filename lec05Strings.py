@@ -37,8 +37,11 @@
 
 # 7 Check String
 
-# Msg= 'Pakistan is a good country.'
-# # print("Pakistan" in Msg)
+# Msg= 'England is a good country.'
+# if "Pakistan" in Msg:
+#     print('Yes, Pakistan is in the message')
+# else:
+#     print('Sorry! THe word not found')
 
 # if "PAkistan" not in Msg:
 #     print(Msg)
@@ -66,14 +69,14 @@
 
 # 11 Fomat String
 
-name = input('Enter your name: ')
-yob = int(input('Enter the birth year '))
-age = 2022-yob
+# name = input('Enter your name: ')
+# yob = int(input('Enter the birth year '))
+# age = 2022-yob
 
-Msg = '''Hello {},
-Your birth year is {}, that means you are {} year old.
-'''
-print(Msg.format(name,yob,age))
+# Msg = '''Hello {},
+# Your birth year is {}, that means you are {} year old.
+# '''
+# print(Msg.format(name,yob,age))
 
 
 
