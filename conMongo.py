@@ -2,7 +2,7 @@ from datetime import datetime
 import pymongo
 from pymongo import MongoClient
 import datetime
-cluster = MongoClient('mongodb://atta:7GnX4qV2hc6WKkn@cluster0-shard-00-00.bm1jo.mongodb.net:27017,cluster0-shard-00-01.bm1jo.mongodb.net:27017,cluster0-shard-00-02.bm1jo.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-nlayp1-shard-0&authSource=admin&retryWrites=true&w=majority')
+cluster = MongoClient('mongodb://<ID>:<Password>@cluster0-')
 #mongodb://atta:<password>@cluster0-shard-00-00.bm1jo.mongodb.net:27017,cluster0-shard-00-01.bm1jo.mongodb.net:27017,cluster0-shard-00-02.bm1jo.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-nlayp1-shard-0&authSource=admin&retryWrites=true&w=majority
 db = cluster['test']
 collection = db['test']
